@@ -1,0 +1,79 @@
+/* General Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:pink;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color:whitesmoke;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color:black;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    color:black;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    min-height: 50vh;
+    text-align: center;
+}
+
+#home {
+    background-color:fuchsia;
+    text-align: center;
+}
+
+#about {
+    background-color:yellow;
+}
+
+#services {
+    background-color:blueviolet;
+}
+
+#contact {
+    background-color:greenyellow;
+}
+
+/* Sticky Navbar Change on Scroll */
+.navbar.scrolled {
+    background-color:skyblue;
+}
